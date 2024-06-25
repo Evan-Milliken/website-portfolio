@@ -1,0 +1,96 @@
+
+.mybackground {
+  background: linear-gradient(300deg, #7868E6, #A275E3, #FF204E, #FA0559);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.mytext {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+}
+
+/* Ensuring the image is a perfect circle */
+.myborder {
+  border: 2px solid white;
+  width: 250px; /* Ensure the width and height are equal */
+  height: 250px; /* Ensure the width and height are equal */
+  border-radius: 50%; /* This makes the image a perfect circle */
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+.feature-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: .75rem;
+}
+
+.carousel-indicators {
+  position: relative;
+}
+
+a, .nav-link {
+  color: black;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #0d6efd;
+}
+
+/* Additional styles for responsiveness and consistency */
+.container {
+  max-width: 1200px;
+}
+
+h2, h3 {
+  color: white;
+}
+
+#skills .feature {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#skills .feature h3 {
+  color: #fff;
+}
+
+#projects .carousel {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#projects .carousel-item h5 {
+  margin-bottom: 10px;
+}
+
+#header , #footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+#footer a {
+  color: white;
+}
+
+#footer a:hover {
+  color: #0d6efd;
+}
